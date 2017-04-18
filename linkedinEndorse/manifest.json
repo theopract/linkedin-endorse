@@ -1,0 +1,15 @@
+{
+    "background_page" : "background.html", 
+    "content_scripts" : [
+        {
+            "js":[ "endorse.user.js" ], 
+            "matches":[ "*://*.linkedin.com/*" ], 
+            "run_at":"document_end"  
+        }
+    ], 
+    "description" : "", 
+    "name" : "LinkedIN Endorse People", 
+    "permissions" : [ "http://*/*", "unlimitedStorage"],
+    "version" : "0.0.1",
+    "manifest_version": 2
+}
